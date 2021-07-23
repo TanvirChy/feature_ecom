@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/feature_ecom/static/css/main.1500af40.chunk.css",
+    "main.js": "/feature_ecom/static/js/main.f7f8e9f6.chunk.js",
+    "main.js.map": "/feature_ecom/static/js/main.f7f8e9f6.chunk.js.map",
+    "runtime-main.js": "/feature_ecom/static/js/runtime-main.78345a29.js",
+    "runtime-main.js.map": "/feature_ecom/static/js/runtime-main.78345a29.js.map",
+    "static/js/2.267f2436.chunk.js": "/feature_ecom/static/js/2.267f2436.chunk.js",
+    "static/js/2.267f2436.chunk.js.map": "/feature_ecom/static/js/2.267f2436.chunk.js.map",
+    "static/js/3.4242ab18.chunk.js": "/feature_ecom/static/js/3.4242ab18.chunk.js",
+    "static/js/3.4242ab18.chunk.js.map": "/feature_ecom/static/js/3.4242ab18.chunk.js.map",
+    "index.html": "/feature_ecom/index.html",
+    "static/css/main.1500af40.chunk.css.map": "/feature_ecom/static/css/main.1500af40.chunk.css.map",
+    "static/js/2.267f2436.chunk.js.LICENSE.txt": "/feature_ecom/static/js/2.267f2436.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78345a29.js",
+    "static/js/2.267f2436.chunk.js",
+    "static/css/main.1500af40.chunk.css",
+    "static/js/main.f7f8e9f6.chunk.js"
+  ]
+}
