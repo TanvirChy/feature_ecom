@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+import "./App.css";
+import NavBar from "./NavBar/NavBar";
+import ThemeContext from "./ThemeContext";
+import Checkout from "./Checkout/Checkout";
+import ProductDetails from "./ProductList/ProductDetails";
+import Home from "./Home/Home";
+import { StateProvider } from "./store";
+import Cart from './Cart/Cart'
+
+
+const App = () => {
+  const [dark, setDark] = useState(false);
+
+  const toggleDark = () => {
+    setDark((isDark) => !isDark);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StateProvider>
+      <ThemeContext.Provider value={{ dark: dark, toggle: toggleDark }}>
+        <div className={`App ${dark ? "dark" : "light"}`}>
+          <Router>
+            <NavBar />
+            <Switch>
+              <Route path="/checkout" component={Checkout} />
+              <Route path="/product/:productId" component={ProductDetails} />
+              <Route path="/" component={Home} />
+            </Switch>
+            <Cart />
+          </Router>
+        </div>
+      </ThemeContext.Provider>
+    </StateProvider>
   );
-}
+};
 
 export default App;
